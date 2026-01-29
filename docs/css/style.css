@@ -44,8 +44,9 @@
     --color-light: #f9f9f9;
 
     /* Variabler för typografi */
-    --type-heading: sans-serif;
-    --type-body: serif;
+    --type-heading: "Rubik Mono One", monospace;
+    --type-heading-2: "Merriweather Sans", sans-serif;
+    --type-body: "Roboto", sans-serif;;
     --line-height-body: 1.6;
     --line-height-heading: 1.1;
 
@@ -63,21 +64,23 @@ body {
     font-size: var(--step-1);
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1 {
     font-family: var(--type-heading);
+    line-height: var(--line-height-heading);
+}
+
+h2 {
+    font-family: var(--type-heading-2);
     line-height: var(--line-height-heading);
 }
 
 h1 {
     font-size: var(--step-4);
-    font-weight: 800;
+    font-weight: 400;
 }
 h2 {
     font-size: var(--step-3);
-    font-weight: 600;
+    font-weight: 800;
 }
 h3 {
     font-size: var(--step-2);
@@ -183,7 +186,7 @@ img {
 .button {
     display: inline-block;
     padding: var(--space-xs) var(--space-m);
-    font-family: var(--type-heading);
+    font-family: var(--type-heading-2);
     font-size: var(--step-1);
     font-weight: 600;
     border: none;
